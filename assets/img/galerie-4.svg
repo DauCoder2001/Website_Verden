@@ -1,73 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="PLATZHALTERBILD">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#15181a"/>
-      <stop offset="55%" stop-color="#0f1b15"/>
-      <stop offset="100%" stop-color="#0a0a0b"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8eef5"/>
     </linearGradient>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2782c0"/>
+      <stop offset="100%" stop-color="#0e5c8f"/>
+    </linearGradient>
   </defs>
 
   <rect width="800" height="600" fill="url(#bg)"/>
-  <rect width="800" height="600" fill="url(#grid)"/>
-  <ellipse cx="576" cy="132" rx="360" ry="252"
-           fill="#1fa463" fill-opacity=".13"/>
+
+  <rect x="35" y="87"
+        width="730" height="342"
+        rx="18" fill="#c9d5e0"/>
+  <rect x="56.00000000000001" y="108" width="688" height="300"
+        rx="7.2" fill="url(#cloth)"/>
+  <rect x="56.00000000000001" y="108" width="688" height="102.00000000000001"
+        rx="7.2" fill="#ffffff" fill-opacity=".07"/>
 
   
     <defs>
       <radialGradient id="g13" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
         <stop offset="45%" stop-color="#f2c744"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip13"><circle cx="240" cy="330" r="78"/></clipPath>
+      <clipPath id="clip13"><circle cx="234.88" cy="288" r="72"/></clipPath>
     </defs>
-    <circle cx="240" cy="330" r="78" fill="#f2c744"/>
+    <ellipse cx="234.88" cy="356.4" rx="68.39999999999999" ry="15.84"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="234.88" cy="288" r="72" fill="#f2c744"/>
     
-    <circle cx="240" cy="330" r="78" fill="url(#g13)"/>
-    <circle cx="240" cy="330" r="32.76" fill="#f7f7f7"/>
-    <text x="240" y="330" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="39" font-weight="700" text-anchor="middle"
+    <circle cx="234.88" cy="288" r="72" fill="url(#g13)"/>
+    <circle cx="234.88" cy="288" r="30.24" fill="#fbfbfb"/>
+    <text x="234.88" y="288" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="36" font-weight="700" text-anchor="middle"
           dominant-baseline="central">1</text>
   
     <defs>
       <radialGradient id="g14" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
-        <stop offset="45%" stop-color="#111114"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
+        <stop offset="45%" stop-color="#15161a"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip14"><circle cx="384.3" cy="357.3" r="66.3"/></clipPath>
+      <clipPath id="clip14"><circle cx="371.67999999999995" cy="309.6" r="61.199999999999996"/></clipPath>
     </defs>
-    <circle cx="384.3" cy="357.3" r="66.3" fill="#111114"/>
+    <ellipse cx="371.67999999999995" cy="367.74" rx="58.13999999999999" ry="13.463999999999999"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="371.67999999999995" cy="309.6" r="61.199999999999996" fill="#15161a"/>
     
-    <circle cx="384.3" cy="357.3" r="66.3" fill="url(#g14)"/>
-    <circle cx="384.3" cy="357.3" r="27.845999999999997" fill="#f7f7f7"/>
-    <text x="384.3" y="357.3" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="33.15" font-weight="700" text-anchor="middle"
+    <circle cx="371.67999999999995" cy="309.6" r="61.199999999999996" fill="url(#g14)"/>
+    <circle cx="371.67999999999995" cy="309.6" r="25.703999999999997" fill="#fbfbfb"/>
+    <text x="371.67999999999995" y="309.6" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="30.599999999999998" font-weight="700" text-anchor="middle"
           dominant-baseline="central">8</text>
   
     <defs>
       <radialGradient id="g15" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
         <stop offset="45%" stop-color="#d64545"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip15"><circle cx="505.2" cy="310.5" r="54.599999999999994"/></clipPath>
+      <clipPath id="clip15"><circle cx="483.28" cy="266.4" r="50.4"/></clipPath>
     </defs>
-    <circle cx="505.2" cy="310.5" r="54.599999999999994" fill="#d64545"/>
+    <ellipse cx="483.28" cy="314.28" rx="47.879999999999995" ry="11.088"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="483.28" cy="266.4" r="50.4" fill="#d64545"/>
     
-    <circle cx="505.2" cy="310.5" r="54.599999999999994" fill="url(#g15)"/>
-    <circle cx="505.2" cy="310.5" r="22.931999999999995" fill="#f7f7f7"/>
-    <text x="505.2" y="310.5" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="27.299999999999997" font-weight="700" text-anchor="middle"
+    <circle cx="483.28" cy="266.4" r="50.4" fill="url(#g15)"/>
+    <circle cx="483.28" cy="266.4" r="21.168" fill="#fbfbfb"/>
+    <text x="483.28" y="266.4" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="25.2" font-weight="700" text-anchor="middle"
           dominant-baseline="central">3</text>
 
   <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="400" y="516" fill="#f4f4f5" font-size="45"
+    <text x="400" y="516" fill="#16232f" font-size="41"
           font-weight="700"></text>
-    <text x="400" y="516" fill="#8a8a94" font-size="27"
-          letter-spacing="2">PLATZHALTERBILD</text>
+    <text x="400" y="516" fill="#64788a"
+          font-size="25" letter-spacing="2">PLATZHALTERBILD</text>
   </g>
 </svg>

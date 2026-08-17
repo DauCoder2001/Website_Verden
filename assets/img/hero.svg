@@ -1,73 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Clubheim – Turnierbereich">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Clubheim Bremer Str. 121">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#15181a"/>
-      <stop offset="55%" stop-color="#0f1b15"/>
-      <stop offset="100%" stop-color="#0a0a0b"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8eef5"/>
     </linearGradient>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2782c0"/>
+      <stop offset="100%" stop-color="#0e5c8f"/>
+    </linearGradient>
   </defs>
 
   <rect width="1200" height="800" fill="url(#bg)"/>
-  <rect width="1200" height="800" fill="url(#grid)"/>
-  <ellipse cx="864" cy="176" rx="540" ry="336"
-           fill="#1fa463" fill-opacity=".13"/>
+
+  <rect x="56.000000000000014" y="116"
+        width="1088" height="456"
+        rx="24" fill="#c9d5e0"/>
+  <rect x="84.00000000000001" y="144" width="1032" height="400"
+        rx="9.6" fill="url(#cloth)"/>
+  <rect x="84.00000000000001" y="144" width="1032" height="136"
+        rx="9.6" fill="#ffffff" fill-opacity=".07"/>
 
   
     <defs>
       <radialGradient id="g1" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
-        <stop offset="45%" stop-color="#111114"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
+        <stop offset="45%" stop-color="#15161a"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip1"><circle cx="360" cy="440.00000000000006" r="104"/></clipPath>
+      <clipPath id="clip1"><circle cx="352.32" cy="384" r="96"/></clipPath>
     </defs>
-    <circle cx="360" cy="440.00000000000006" r="104" fill="#111114"/>
+    <ellipse cx="352.32" cy="475.2" rx="91.19999999999999" ry="21.12"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="352.32" cy="384" r="96" fill="#15161a"/>
     
-    <circle cx="360" cy="440.00000000000006" r="104" fill="url(#g1)"/>
-    <circle cx="360" cy="440.00000000000006" r="43.68" fill="#f7f7f7"/>
-    <text x="360" y="440.00000000000006" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="52" font-weight="700" text-anchor="middle"
+    <circle cx="352.32" cy="384" r="96" fill="url(#g1)"/>
+    <circle cx="352.32" cy="384" r="40.32" fill="#fbfbfb"/>
+    <text x="352.32" y="384" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="48" font-weight="700" text-anchor="middle"
           dominant-baseline="central">8</text>
   
     <defs>
       <radialGradient id="g2" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
-        <stop offset="45%" stop-color="#3b6fd4"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
+        <stop offset="45%" stop-color="#2f5fc0"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip2"><circle cx="552.4" cy="476.40000000000003" r="88.39999999999999"/></clipPath>
+      <clipPath id="clip2"><circle cx="534.72" cy="412.8" r="81.6"/></clipPath>
     </defs>
-    <circle cx="552.4" cy="476.40000000000003" r="88.39999999999999" fill="#3b6fd4"/>
+    <ellipse cx="534.72" cy="490.32" rx="77.52" ry="17.951999999999998"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="534.72" cy="412.8" r="81.6" fill="#2f5fc0"/>
     
-    <circle cx="552.4" cy="476.40000000000003" r="88.39999999999999" fill="url(#g2)"/>
-    <circle cx="552.4" cy="476.40000000000003" r="37.12799999999999" fill="#f7f7f7"/>
-    <text x="552.4" y="476.40000000000003" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="44.199999999999996" font-weight="700" text-anchor="middle"
+    <circle cx="534.72" cy="412.8" r="81.6" fill="url(#g2)"/>
+    <circle cx="534.72" cy="412.8" r="34.272" fill="#fbfbfb"/>
+    <text x="534.72" y="412.8" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="40.8" font-weight="700" text-anchor="middle"
           dominant-baseline="central">2</text>
   
     <defs>
       <radialGradient id="g3" cx="35%" cy="30%" r="75%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
-        <stop offset="45%" stop-color="#8b5cf6"/>
-        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
+        <stop offset="45%" stop-color="#7c4dc4"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".5"/>
       </radialGradient>
-      <clipPath id="clip3"><circle cx="713.5999999999999" cy="414.00000000000006" r="72.8"/></clipPath>
+      <clipPath id="clip3"><circle cx="683.52" cy="355.2" r="67.19999999999999"/></clipPath>
     </defs>
-    <circle cx="713.5999999999999" cy="414.00000000000006" r="72.8" fill="#8b5cf6"/>
+    <ellipse cx="683.52" cy="419.03999999999996" rx="63.83999999999999" ry="14.783999999999997"
+             fill="#06263d" fill-opacity=".35"/>
+    <circle cx="683.52" cy="355.2" r="67.19999999999999" fill="#7c4dc4"/>
     
-    <circle cx="713.5999999999999" cy="414.00000000000006" r="72.8" fill="url(#g3)"/>
-    <circle cx="713.5999999999999" cy="414.00000000000006" r="30.575999999999997" fill="#f7f7f7"/>
-    <text x="713.5999999999999" y="414.00000000000006" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
-          font-size="36.4" font-weight="700" text-anchor="middle"
+    <circle cx="683.52" cy="355.2" r="67.19999999999999" fill="url(#g3)"/>
+    <circle cx="683.52" cy="355.2" r="28.223999999999993" fill="#fbfbfb"/>
+    <text x="683.52" y="355.2" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="33.599999999999994" font-weight="700" text-anchor="middle"
           dominant-baseline="central">4</text>
 
   <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="600" y="688" fill="#f4f4f5" font-size="60"
-          font-weight="700">Clubheim – Turnierbereich</text>
-    <text x="600" y="752" fill="#8a8a94" font-size="36"
-          letter-spacing="2">PLATZHALTERBILD</text>
+    <text x="600" y="688" fill="#16232f" font-size="54"
+          font-weight="700">Clubheim Bremer Str. 121</text>
+    <text x="600" y="752" fill="#64788a"
+          font-size="34" letter-spacing="2">PLATZHALTERBILD</text>
   </g>
 </svg>

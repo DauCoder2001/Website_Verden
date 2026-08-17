@@ -1,4 +1,4 @@
-# Website Billardclub Black & White Verden e.V.
+# Website Billard Club Black & White Verden
 
 Statische Website – reines HTML, CSS und JavaScript. Kein Build-Schritt, keine
 Abhängigkeiten, keine externen Dienste. Läuft auf jedem einfachen Webspace.
@@ -9,7 +9,6 @@ Abhängigkeiten, keine externen Dienste. Läuft auf jedem einfachen Webspace.
 ├── index.html          Startseite
 ├── verein.html         Über uns, Vorstand, Beiträge
 ├── training.html       Trainingszeiten & Öffnungszeiten
-├── mannschaften.html   Teams und Ligabetrieb
 ├── galerie.html        Bildergalerie mit Lightbox
 ├── kontakt.html        Kontaktformular & Anfahrt
 ├── impressum.html      Impressum (Vorlage)
@@ -28,36 +27,79 @@ Doppelklick auf `index.html` genügt. Alternativ mit lokalem Server:
 npx serve .
 ```
 
-## Was noch angepasst werden muss
+## Gestaltung
 
-Die Website ist inhaltlich vollständig, arbeitet aber mit Platzhaltern. Diese Stellen
-sind im Quelltext mit einem grün markierten Hinweiskasten (`<div class="note">`)
-gekennzeichnet. Konkret:
+Helles Design mit Ocean Blue als Akzentfarbe – abgeleitet vom Tuch der Tische
+(Z9 BilliardCloth® Ocean Blue). Alle Farben stehen als CSS-Variablen ganz oben in
+`assets/css/style.css`; für einen anderen Blauton reicht es, `--accent`,
+`--accent-hover` und `--accent-soft` anzupassen.
+
+## Bereits eingepflegte Vereinsdaten
+
+- Name: Billard Club Black & White Verden
+- Anschrift: Bremer Str. 121, 27283 Verden (Aller)
+- 4 Tische Gabriel's Signature, 9 Fuß
+- Tuch: Z9 BilliardCloth® Ocean Blue
+- über 30 Mitglieder
+- Tonalität und Aussagen der Startseite folgen dem Kleinanzeigen-Text: offen für
+  jedes Alter, Anfänger wie Fortgeschrittene, Tipps und Übungen zum Besserwerden,
+  kostenloses und unverbindliches Reinschauen
+
+### Logo
+
+`assets/img/logo.svg` ist eine Nachbildung des Vereinslogos (weiße Kugel mit
+schwarzer Acht) als reine Vektorgrafik, damit sie in jeder Größe scharf bleibt. Die
+Schriftzüge des Originals fehlen bewusst – im Seitenkopf steht der Name daneben
+bereits als Text. Wenn ihr das Original als Datei habt, ersetzt es einfach
+`logo.svg` und `favicon.svg`.
+
+## Was noch fehlt
+
+Offene Stellen sind auf den Seiten selbst mit einem blau markierten Hinweiskasten
+(`<div class="note">`) gekennzeichnet:
 
 | Was | Wo |
 |---|---|
-| Anschrift, Telefon, E-Mail | Footer **aller** Seiten + `kontakt.html` |
+| Telefonnummer und E-Mail-Adresse | Footer **aller** Seiten + `kontakt.html` |
 | Namen des Vorstands | `verein.html` |
+| Gründungsjahr / Vereinsgeschichte | `verein.html` |
 | Mitgliedsbeiträge | `verein.html` |
 | Trainingszeiten | `training.html` |
-| Spielklassen, Teams, Ansprechpartner | `mannschaften.html` |
-| Gründungsjahr, Mitglieder- und Tischanzahl | `index.html` (Kennzahlen-Block) |
-| Vereinsregister, vertretungsberechtigter Vorstand | `impressum.html` |
+| Rechtsform (e. V.?), Vereinsregister | `impressum.html` |
 | Hosting-Anbieter, Löschfristen, Stand | `datenschutz.html` |
 | Alle Fotos | `assets/img/` |
 
-Die Kontaktdaten stehen im Footer jeder Seite. Zum Ersetzen am schnellsten per
+Kontaktdaten stehen im Footer jeder Seite. Zum Ersetzen am schnellsten per
 Suchen-und-Ersetzen über alle `.html`-Dateien:
 
-- `Musterstraße 12` → echte Straße
-- `info@bc-blackwhite-verden.de` → echte E-Mail-Adresse
-- `04231 / 00 000 00` und `+4942310000000` → echte Telefonnummer
+- `[Telefonnummer eintragen]` → echte Nummer, idealerweise als
+  `<a href="tel:+49...">…</a>`
+- `[E-Mail-Adresse eintragen]` → echte Adresse, ebenfalls als `mailto:`-Link
+- in `kontakt.html` zusätzlich `data-mailto="bitte-adresse-eintragen@example.com"`
+  am `<form>` auf die echte Adresse setzen
+
+Kein Ligabetrieb: Die Seite `mannschaften.html` wurde auf Wunsch entfernt, ebenso
+alle Verweise auf Mannschaften, Spielklassen, Punktspiele und Heimspiele. Falls
+später doch ein Ligateam dazukommt, muss die Seite neu angelegt und in Navigation
+und Fußzeile aufgenommen werden.
+
+Weiterhin ungeprüft sind die Trainingszeiten in `training.html` – die Tabelle enthält
+Beispielwerte und ist entsprechend markiert.
+
+### Fotos, die schon existieren
+
+Aus den vorhandenen Aufnahmen ergeben sich gute Motive für die Galerie – die
+Bildunterschriften sind bereits darauf ausgerichtet: Blick in den Spielraum, ein
+Gabriel's Signature aus der Nähe, das Ocean-Blue-Tuch, die Sitzecke, die
+Tischbeleuchtung, der Eingang an der Bremer Straße und das Vereinsbanner. Ein
+Innenraumfoto eignet sich zudem als Hero-Bild auf der Startseite.
 
 ### Bilder austauschen
 
 Die Dateien in `assets/img/` sind generierte Platzhalter-Grafiken. Eigene Fotos als
 JPG/WebP dort ablegen und die `src`-Pfade in den HTML-Dateien anpassen. Empfehlung:
-Breite max. 1600 px, Dateigröße unter 300 kB.
+Breite max. 1600 px, Dateigröße unter 300 kB. Ein Foto der Hausfront mit dem blauen
+Tor und dem Vereinsbanner wäre ein gutes Hero-Bild.
 
 **Wichtig:** Vor der Veröffentlichung von Fotos die Einwilligung der abgebildeten
 Personen einholen (siehe `datenschutz.html`, Abschnitt 6).
@@ -105,11 +147,13 @@ dieser Website. Sobald externe Dienste hinzukommen, müssen die Texte erweitert 
 - **Responsiv** ab ca. 320 px Breite, mobiles Menü unter 860 px.
 - **Barrierefreiheit:** Skip-Link, sichtbarer Fokus, ARIA-Attribute an Menü und
   Lightbox, `prefers-reduced-motion` wird respektiert.
-- **Farben und Abstände** sind CSS-Variablen am Anfang von `style.css`. Für ein
-  anderes Akzentgrün nur `--accent` und `--accent-hover` ändern.
 
 ## Veröffentlichen
 
 Alle Dateien per FTP in das Web-Verzeichnis des Hosters hochladen – fertig. Ebenso
 möglich: GitHub Pages, Netlify oder Cloudflare Pages (Repository verbinden, kein
 Build-Befehl, Ausgabeverzeichnis `/`).
+
+Die alte Vereinsdomain vom Banner (`www.pbcblack-and-white.de`) löst derzeit nicht
+mehr auf – vor dem Start klären, ob sie reaktiviert oder eine neue Domain registriert
+wird.
