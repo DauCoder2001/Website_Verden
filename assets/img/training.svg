@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750" role="img" aria-label="Training am Tisch">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#15181a"/>
+      <stop offset="55%" stop-color="#0f1b15"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="750" fill="url(#bg)"/>
+  <rect width="1000" height="750" fill="url(#grid)"/>
+  <ellipse cx="720" cy="165" rx="450" ry="315"
+           fill="#1fa463" fill-opacity=".13"/>
+
+  
+    <defs>
+      <radialGradient id="g13" cx="35%" cy="30%" r="75%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset="45%" stop-color="#f2c744"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+      </radialGradient>
+      <clipPath id="clip13"><circle cx="300" cy="412.50000000000006" r="97.5"/></clipPath>
+    </defs>
+    <circle cx="300" cy="412.50000000000006" r="97.5" fill="#f2c744"/>
+    
+    <circle cx="300" cy="412.50000000000006" r="97.5" fill="url(#g13)"/>
+    <circle cx="300" cy="412.50000000000006" r="40.949999999999996" fill="#f7f7f7"/>
+    <text x="300" y="412.50000000000006" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="48.75" font-weight="700" text-anchor="middle"
+          dominant-baseline="central">1</text>
+  
+    <defs>
+      <radialGradient id="g14" cx="35%" cy="30%" r="75%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset="45%" stop-color="#111114"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+      </radialGradient>
+      <clipPath id="clip14"><circle cx="480.375" cy="446.62500000000006" r="82.875"/></clipPath>
+    </defs>
+    <circle cx="480.375" cy="446.62500000000006" r="82.875" fill="#111114"/>
+    
+    <circle cx="480.375" cy="446.62500000000006" r="82.875" fill="url(#g14)"/>
+    <circle cx="480.375" cy="446.62500000000006" r="34.8075" fill="#f7f7f7"/>
+    <text x="480.375" y="446.62500000000006" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="41.4375" font-weight="700" text-anchor="middle"
+          dominant-baseline="central">8</text>
+  
+    <defs>
+      <radialGradient id="g15" cx="35%" cy="30%" r="75%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity=".45"/>
+        <stop offset="45%" stop-color="#d64545"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity=".55"/>
+      </radialGradient>
+      <clipPath id="clip15"><circle cx="631.5" cy="388.12500000000006" r="68.25"/></clipPath>
+    </defs>
+    <circle cx="631.5" cy="388.12500000000006" r="68.25" fill="#d64545"/>
+    
+    <circle cx="631.5" cy="388.12500000000006" r="68.25" fill="url(#g15)"/>
+    <circle cx="631.5" cy="388.12500000000006" r="28.665" fill="#f7f7f7"/>
+    <text x="631.5" y="388.12500000000006" fill="#1a1a1a" font-family="Segoe UI, Arial, sans-serif"
+          font-size="34.125" font-weight="700" text-anchor="middle"
+          dominant-baseline="central">3</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="500" y="645" fill="#f4f4f5" font-size="56"
+          font-weight="700">Training am Tisch</text>
+    <text x="500" y="705" fill="#8a8a94" font-size="34"
+          letter-spacing="2">PLATZHALTERBILD</text>
+  </g>
+</svg>

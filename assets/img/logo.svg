@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logo Billardclub Black &amp; White Verden">
+  <defs>
+    <radialGradient id="l1" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".5"/>
+      <stop offset="50%" stop-color="#0f0f12"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#l1)" stroke="#1fa463" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="13" fill="#f7f7f7"/>
+  <text x="32" y="33" fill="#111114" font-family="Segoe UI, Arial, sans-serif"
+        font-size="17" font-weight="800" text-anchor="middle"
+        dominant-baseline="central">8</text>
+</svg>
