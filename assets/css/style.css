@@ -59,6 +59,8 @@ body {
 
 img { max-width: 100%; display: block; height: auto; }
 
+address { font-style: normal; }
+
 a {
   color: var(--accent);
   text-decoration: none;
