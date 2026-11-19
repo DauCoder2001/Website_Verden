@@ -120,8 +120,11 @@
           </div>
 
           <div class="field">
-            <label for="nachricht">Nachricht *</label>
-            <textarea id="nachricht" name="nachricht" required></textarea>
+            <label for="nachricht">Nachricht *
+              <span class="field__hinweis">höchstens 1200 Zeichen</span>
+            </label>
+            <textarea id="nachricht" name="nachricht" required
+                      maxlength="1200"></textarea>
           </div>
 
           <div class="field field--check">

@@ -16,7 +16,7 @@
      Bei jeder ausgelieferten Aenderung hier hochzaehlen und in der
      CHANGELOG.md einen Abschnitt ergaenzen.
      --------------------------------------------------------------------- */
-  var VERSION = '1.0.0';
+  var VERSION = '1.0.1';
 
   /* ---------------------------------------------------------------------
      Mobile-Navigation
@@ -135,6 +135,15 @@
   if (form && !form.getAttribute('action')) {
     var status = document.getElementById('form-status');
 
+    // Statusmeldung an einer Stelle setzen, damit Text und Aussehen nie
+    // auseinanderlaufen.
+    function melde(text, problem) {
+      if (!status) { return; }
+      status.textContent = text;
+      status.classList.toggle('form-status--problem', !!problem);
+      status.classList.add('is-visible');
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.reportValidity()) { return; }
@@ -147,17 +156,38 @@
         'Telefon: ' + (data.get('telefon') || '-') + '\n\n' +
         (data.get('nachricht') || '');
 
-      var empfaenger = form.dataset.mailto || 'info@example.de';
-      window.location.href =
+      var empfaenger = form.dataset.mailto || '';
+
+      // Solange keine echte Adresse hinterlegt ist, darf das Formular keinen
+      // Versand behaupten. 'example.' erkennt die Platzhalter mit.
+      if (!empfaenger || empfaenger.indexOf('example.') !== -1) {
+        melde('Die E-Mail-Adresse des Vereins ist hier noch nicht hinterlegt, ' +
+              'deine Nachricht kann deshalb nicht verschickt werden. Komm am ' +
+              'besten einfach im Clubheim vorbei: Bremer Str. 121, ' +
+              '27283 Verden (Aller).', true);
+        return;
+      }
+
+      var adresse =
         'mailto:' + empfaenger +
         '?subject=' + encodeURIComponent(betreff) +
         '&body=' + encodeURIComponent(body);
 
-      if (status) {
-        status.textContent =
-          'Dein E-Mail-Programm wurde geöffnet. Bitte dort noch auf "Senden" klicken.';
-        status.classList.add('is-visible');
+      // mailto-Adressen werden je nach System ab etwa 2000 Zeichen abgeschnitten.
+      // Umlaute zaehlen dabei dreifach (aus ü wird %C3%BC), deshalb wird die
+      // fertige Adresse gemessen und nicht die sichtbare Textlaenge.
+      if (adresse.length > 1900) {
+        melde('Deine Nachricht ist zu lang für diesen Weg und würde unterwegs ' +
+              'abgeschnitten. Bitte kürze sie etwas oder schreib uns direkt ' +
+              'an ' + empfaenger + '.', true);
+        return;
       }
+
+      window.location.href = adresse;
+
+      melde('Es sollte sich jetzt dein E-Mail-Programm mit der fertigen Nachricht ' +
+            'öffnen. Falls nicht, schreib uns bitte direkt an ' +
+            empfaenger + '.', false);
     });
   }
 

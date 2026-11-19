@@ -613,6 +613,7 @@ td strong { color: var(--text); }
 .form { display: grid; gap: 18px; }
 .field { display: grid; gap: 7px; }
 .field label { font-size: 0.9rem; font-weight: 600; }
+.field__hinweis { font-weight: 400; color: var(--text-dim); }
 .field input,
 .field textarea,
 .field select {
@@ -654,6 +655,14 @@ td strong { color: var(--text); }
   font-size: 0.94rem;
 }
 .form-status.is-visible { display: block; }
+
+/* Meldung, die kein Erfolg ist. Der Token-Satz hat keine Warnfarbe, deshalb
+   bewusst neutral gehalten - deutlich anders als die blaue Bestaetigung. */
+.form-status--problem {
+  background: var(--bg-alt);
+  border-color: var(--border-strong);
+  border-left: 4px solid var(--text-muted);
+}
 
 .contact-list { list-style: none; margin: 0; padding: 0; }
 .contact-list li {

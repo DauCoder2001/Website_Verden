@@ -15,6 +15,29 @@ hier einen Abschnitt ergänzen.
 
 ---
 
+## 1.0.1 – 19.11.2026
+
+### Behoben
+
+- **Das Kontaktformular meldete einen Versand, den es nicht geben konnte.** Es
+  bestätigte „Dein E-Mail-Programm wurde geöffnet" auch dann, wenn als Empfänger
+  noch ein Platzhalter eingetragen war oder gar kein Mail-Programm existiert. Ist
+  keine echte Adresse hinterlegt, sagt das Formular das jetzt und verweist auf die
+  Anschrift des Clubheims, statt einen Versand zu behaupten.
+- **Lange Nachrichten wurden stillschweigend abgeschnitten.** Der Weg über
+  `mailto:` ist je nach System auf etwa 2000 Zeichen begrenzt, Umlaute zählen
+  dabei dreifach. Das Nachrichtenfeld nennt nun seine Grenze von 1200 Zeichen und
+  erzwingt sie; zusätzlich wird die fertige Adresse vor dem Absenden gemessen und
+  der Absender bei Überlänge gebeten, zu kürzen.
+
+### Geändert
+
+- Meldungen des Kontaktformulars, die kein Erfolg sind, heben sich jetzt deutlich
+  von der Bestätigung ab: neutraler Hintergrund mit breitem Markierungsstreifen
+  statt des blauen Kästchens.
+
+---
+
 ## 1.0.0 – 19.11.2026
 
 Erste gezählte Version. Sie hält den Stand fest, mit dem die Website
