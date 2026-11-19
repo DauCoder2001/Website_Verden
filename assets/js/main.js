@@ -16,7 +16,7 @@
      Bei jeder ausgelieferten Aenderung hier hochzaehlen und in der
      CHANGELOG.md einen Abschnitt ergaenzen.
      --------------------------------------------------------------------- */
-  var VERSION = '1.0.1';
+  var VERSION = '1.0.2';
 
   /* ---------------------------------------------------------------------
      Mobile-Navigation
@@ -81,6 +81,22 @@
     var lbClose = lightbox.querySelector('.lightbox__close');
     var lastFocused = null;
 
+    // Alles hinter der Bildansicht stilllegen, solange sie offen ist. Ohne das
+    // wandert der Fokus mit der Tabulatortaste in die unsichtbare Seite
+    // dahinter und findet nicht zurueck. 'inert' nimmt den Bereich zugleich
+    // aus der Tabreihenfolge und aus dem Vorlesen durch Screenreader.
+    // Der Skip-Link gehoert dazu: er steht ausserhalb von Kopf, Inhalt und Fuss.
+    var hintergrund = [
+      document.querySelector('.skip-link'),
+      document.querySelector('.header'),
+      document.getElementById('main'),
+      document.querySelector('.footer')
+    ].filter(function (el) { return el; });
+
+    function hintergrundStilllegen(an) {
+      hintergrund.forEach(function (el) { el.inert = an; });
+    }
+
     function openLightbox(src, alt, caption) {
       lastFocused = document.activeElement;
       lbImage.src = src;
@@ -89,10 +105,12 @@
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      hintergrundStilllegen(true);
       lbClose.focus();
     }
 
     function closeLightbox() {
+      hintergrundStilllegen(false);
       lightbox.classList.remove('is-open');
       lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';

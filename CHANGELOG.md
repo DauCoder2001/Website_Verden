@@ -15,6 +15,20 @@ hier einen Abschnitt ergänzen.
 
 ---
 
+## 1.0.2 – 19.11.2026
+
+### Behoben
+
+- **Die Bildansicht der Galerie hielt den Tastaturfokus nicht fest.** Sie meldete
+  sich als Dialog, ließ den Fokus mit der Tabulatortaste aber in die verdeckte
+  Seite dahinter wandern, von wo er nicht zurückfand; Screenreader lasen beides
+  gleichzeitig vor. Solange die Bildansicht offen ist, sind Skip-Link, Kopfzeile,
+  Inhalt und Fußzeile nun stillgelegt. Beim Schließen – per Knopf, mit Escape oder
+  durch Klick auf den Hintergrund – wird der Fokus auf das Bild zurückgegeben, von
+  dem aus die Ansicht geöffnet wurde.
+
+---
+
 ## 1.0.1 – 19.11.2026
 
 ### Behoben
