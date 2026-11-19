@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Billardclub Black & White Verden e.V. – Interaktionen
+   Billard Club Black & White Verden – Interaktionen
    Kein Framework, keine externen Abhängigkeiten.
    ========================================================================== */
 (function () {
@@ -16,7 +16,7 @@
      Bei jeder ausgelieferten Aenderung hier hochzaehlen und in der
      CHANGELOG.md einen Abschnitt ergaenzen.
      --------------------------------------------------------------------- */
-  var VERSION = '1.0.2';
+  var VERSION = '1.1.0';
 
   /* ---------------------------------------------------------------------
      Mobile-Navigation
@@ -39,7 +39,7 @@
 
     // Menü schließen, sobald ein Link angeklickt wird
     nav.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') { menueZustand(false); }
+      if (e.target.closest('a')) { menueZustand(false); }
     });
 
     // Menü schließen beim Wechsel auf Desktop-Breite
@@ -114,7 +114,7 @@
       lightbox.classList.remove('is-open');
       lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
-      lbImage.src = '';
+      lbImage.removeAttribute('src');
       if (lastFocused) { lastFocused.focus(); }
     }
 

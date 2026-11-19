@@ -211,6 +211,43 @@ Datensparsame Alternative über OpenStreetMap: In `kontakt.html` den Block
 Den `bbox`-Wert liefert openstreetmap.org über „Teilen → HTML einbetten“. Auch dieser
 Fall gehört in die Datenschutzerklärung.
 
+## Kopf- und Fußzeile ändern
+
+Kopfzeile und Fußzeile stehen in jeder der sieben HTML-Dateien einzeln – zusammen
+rund 490 Zeilen gleiches Markup. Das ist der Preis dafür, dass die Website ohne
+Build-Schritt läuft, und war eine bewusste Entscheidung.
+
+**Arbeitsregel:** Änderungen an Navigation, Anschrift oder Fußzeile nicht von Hand
+in sieben Dateien nachziehen, sondern immer per Suchen-und-Ersetzen über alle
+`.html`-Dateien auf einmal. Sonst laufen die Seiten auseinander, und das fällt
+erst Monate später auf.
+
+Falls die Website weiter wächst, wäre der nächste sinnvolle Schritt ein kleiner
+Generator, der Kopf und Fuß aus einer Vorlage in die Seiten einsetzt – oder der
+Wechsel zu einem Werkzeug wie Astro. Beides bringt allerdings einen Build-Schritt
+mit und nimmt der Website ihre heutige Einfachheit.
+
+## Vorschau in sozialen Netzwerken
+
+Jede Seite hat Open-Graph-Angaben (`og:title`, `og:description`, `og:type`,
+`og:locale`). Wird ein Link in WhatsApp, Facebook oder Mastodon geteilt, erscheinen
+dort Titel und Beschreibung der jeweils geteilten Seite statt nur der nackten
+Adresse.
+
+Zwei Angaben fehlen noch, weil sie die endgültige Domain brauchen:
+
+- `og:url` – die vollständige Adresse der jeweiligen Seite
+- `og:image` – ein Vorschaubild als absolute Adresse, etwa 1200 × 630 Pixel
+
+Sobald die Domain feststeht, in jeder Seite im `<head>` ergänzen:
+
+```html
+<meta property="og:url" content="https://…/verein.html">
+<meta property="og:image" content="https://…/assets/img/vorschau.jpg">
+```
+
+Ein Innenraumfoto mit den vier blauen Tischen wäre dafür das beste Motiv.
+
 ## Rechtliches
 
 `impressum.html` und `datenschutz.html` sind **unverbindliche Vorlagen** und ersetzen

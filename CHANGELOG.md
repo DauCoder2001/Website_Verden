@@ -15,6 +15,44 @@ hier einen Abschnitt ergänzen.
 
 ---
 
+## 1.1.0 – 19.11.2026
+
+### Hinzugefügt
+
+- **Vorschau beim Teilen von Links.** Open-Graph-Angaben gab es bisher nur auf der
+  Startseite. Jetzt hat jede Seite eigene Angaben, sodass beim Teilen in WhatsApp
+  oder Facebook Titel und Beschreibung der tatsächlich geteilten Seite erscheinen
+  statt nur der nackten Adresse. `og:url` und `og:image` fehlen noch, weil sie die
+  endgültige Domain brauchen – beschrieben in der README.
+
+### Behoben
+
+- **Überschriftensprung in der Fußzeile.** Auf sechs Seiten folgten nach einer
+  Überschrift der Ebene 2 direkt Überschriften der Ebene 4; wer die Seite per
+  Überschriftenliste eines Screenreaders durchgeht, bekam eine Lücke in der
+  Gliederung. Die Fußzeile verwendet jetzt Ebene 3.
+- **Weichzeichner der Kopfzeile in älteren Safari-Versionen.** `backdrop-filter`
+  stand ohne Präfix und wurde bis Safari 17 ignoriert. Die Angabe steht nun
+  zusätzlich als `-webkit-backdrop-filter`.
+- **Mobiles Menü schloss nicht bei jedem Klick.** Es reagierte nur, wenn genau der
+  Verweis selbst getroffen wurde. Bekäme ein Navigationspunkt je ein Symbol oder
+  eine innere Auszeichnung, wäre das Klickziel dieses Kind und das Menü offen
+  geblieben.
+- **Überflüssige Anfrage beim Schließen der Bildansicht.** Das Bild behielt einen
+  leeren `src`, den Browser als Verweis auf die Seite selbst auflösen.
+- **Veralteter Vereinsname** im Dateikopf von `assets/js/main.js`.
+
+### Dokumentation
+
+- Arbeitsregel zu Kopf- und Fußzeile: Beide stehen in allen sieben Seiten einzeln.
+  Änderungen daran gehören per Suchen-und-Ersetzen über alle Dateien, nicht von
+  Hand. Ohne Build-Schritt lässt sich die Doppelung nicht auflösen; das war eine
+  bewusste Entscheidung.
+- Abschnitt zur Vorschau in sozialen Netzwerken mit dem, was nach Festlegung der
+  Domain noch zu ergänzen ist.
+
+---
+
 ## 1.0.2 – 19.11.2026
 
 ### Behoben
