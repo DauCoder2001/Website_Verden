@@ -6,6 +6,19 @@
   'use strict';
 
   /* ---------------------------------------------------------------------
+     Versionsnummer
+     Dies ist die EINZIGE Stelle im Projekt, an der die Nummer steht. Sie
+     wird von hier aus in die Fusszeile jeder Seite geschrieben.
+     Schema: Hauptversion.Funktion.Korrektur (semantische Versionierung)
+       Korrektur  1.2.0 -> 1.2.1   nur Fehler behoben
+       Funktion   1.2.1 -> 1.3.0   neue Funktionen
+       Haupt      1.3.0 -> 2.0.0   grosse Umbauten, Inkompatibilitaeten
+     Bei jeder ausgelieferten Aenderung hier hochzaehlen und in der
+     CHANGELOG.md einen Abschnitt ergaenzen.
+     --------------------------------------------------------------------- */
+  var VERSION = '1.0.0';
+
+  /* ---------------------------------------------------------------------
      Mobile-Navigation
      --------------------------------------------------------------------- */
   var toggle = document.querySelector('.nav-toggle');
@@ -149,9 +162,13 @@
   }
 
   /* ---------------------------------------------------------------------
-     Jahreszahl im Footer
+     Jahreszahl und Versionsnummer im Footer
      --------------------------------------------------------------------- */
   document.querySelectorAll('[data-jahr]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
+  });
+
+  document.querySelectorAll('[data-version]').forEach(function (el) {
+    el.textContent = 'v' + VERSION;
   });
 })();

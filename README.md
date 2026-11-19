@@ -13,6 +13,7 @@ Abhängigkeiten, keine externen Dienste. Läuft auf jedem einfachen Webspace.
 ├── kontakt.html        Kontaktformular & Anfahrt
 ├── impressum.html      Impressum (Vorlage)
 ├── datenschutz.html    Datenschutzerklärung (Vorlage)
+├── CHANGELOG.md        Änderungsprotokoll je Version
 ├── .gitignore          Legt fest, was nicht veröffentlicht wird
 └── assets/
     ├── css/style.css   Komplettes Design in einer Datei
@@ -34,6 +35,22 @@ Helles Design mit Ocean Blue als Akzentfarbe – abgeleitet vom Tuch der Tische
 (Z9 BilliardCloth® Ocean Blue). Alle Farben stehen als CSS-Variablen ganz oben in
 `assets/css/style.css`; für einen anderen Blauton reicht es, `--accent`,
 `--accent-hover` und `--accent-soft` anzupassen.
+
+## Versionsnummer
+
+Die aktuelle Version steht in der Fußzeile jeder Seite. Gepflegt wird sie an
+genau einer Stelle – als Konstante `VERSION` am Anfang von `assets/js/main.js`,
+in der Zeile, die mit `var VERSION =` beginnt.
+
+Von dort schreibt `main.js` sie in alle Fußzeilen. Bei jeder ausgelieferten
+Änderung die Nummer dort hochzählen und in der `CHANGELOG.md` einen Abschnitt
+ergänzen. Schema `Hauptversion.Funktion.Korrektur`: die letzte Stelle für
+behobene Fehler, die mittlere für neue Funktionen, die erste für große
+Umbauten.
+
+Weil die Nummer per JavaScript eingesetzt wird, bleibt die Stelle in der Fußzeile
+leer, wenn im Browser kein JavaScript läuft. Der übrige Inhalt der Seite ist
+davon nicht betroffen.
 
 ## Regeln für Knöpfe und Beschriftungen
 

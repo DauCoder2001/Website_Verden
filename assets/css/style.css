@@ -741,6 +741,14 @@ td strong { color: var(--text); }
   font-size: 0.87rem;
 }
 
+/* Die Versionsnummer setzt main.js ein. Der Trenner erscheint nur, wenn
+   wirklich etwas darin steht - sonst stuende dort ein einzelner Punkt. */
+.version { font-variant-numeric: tabular-nums; }
+.version:not(:empty)::before {
+  content: " · ";
+  color: var(--border-strong);
+}
+
 /* --------------------------------------------------------------------------
    13. Rechtstexte (Impressum / Datenschutz)
    -------------------------------------------------------------------------- */
