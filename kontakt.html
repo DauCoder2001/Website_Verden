@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt &amp; Anfahrt – Billard Club Black &amp; White Verden</title>
+  <meta name="description" content="Kontakt zum Billard Club Black &amp; White Verden – Anschrift, Telefon, E-Mail und Anfahrt zum Clubheim in Verden (Aller).">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="logo" href="index.html">
+      <img class="logo__mark" src="assets/img/logo.svg" alt="" width="38" height="38">
+      <span class="logo__text">
+        Black &amp; White
+        <small>Billard Club Verden</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="hauptnavigation" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="hauptnavigation" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="verein.html">Verein</a>
+      <a href="training.html">Training</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="kontakt.html" aria-current="page">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero hero--page">
+    <div class="wrap">
+      <span class="eyebrow">Kontakt</span>
+      <h1>Schreib uns – oder komm einfach vorbei</h1>
+      <p class="lead">
+        Fragen zum ersten Besuch, zum Training oder zur Mitgliedschaft? Wir melden uns
+        in der Regel innerhalb weniger Tage zurück.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== Kontakt & Formular ===================== -->
+  <section class="section">
+    <div class="wrap split" style="align-items:start">
+
+      <div class="reveal">
+        <h2>Kontaktdaten</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="label">Anschrift</span>
+            <address>
+              Billard Club Black &amp; White Verden<br>
+              Bremer Str. 121<br>
+              27283 Verden (Aller)
+            </address>
+          </li>
+          <li>
+            <span class="label">Telefon (Clubheim)</span>
+            [Telefonnummer eintragen]
+          </li>
+          <li>
+            <span class="label">E-Mail</span>
+            [E-Mail-Adresse eintragen]
+          </li>
+          <li>
+            <span class="label">Erreichbarkeit</span>
+            Am besten während der Trainingszeiten im Clubheim
+          </li>
+        </ul>
+
+        <div class="note redaktion">
+          <strong>Noch anzupassen:</strong> Telefonnummer und E-Mail-Adresse fehlen
+          noch. Die Anschrift stimmt. Die E-Mail-Adresse muss zusätzlich beim Formular
+          im Attribut <code>data-mailto</code> eingetragen werden.
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h2>Nachricht schreiben</h2>
+        <p class="form-note" style="margin-bottom:20px">
+          Felder mit <abbr title="Pflichtfeld">*</abbr> bitte ausfüllen.
+        </p>
+
+        <form class="form" id="kontaktformular" data-mailto="bitte-adresse-eintragen@example.com" novalidate>
+          <div class="field">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+
+          <div class="field">
+            <label for="telefon">Telefon (optional)</label>
+            <input type="tel" id="telefon" name="telefon" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="betreff">Anliegen</label>
+            <select id="betreff" name="betreff">
+              <option>Probetraining</option>
+              <option>Mitgliedschaft</option>
+              <option>Tipps für Einsteiger</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="nachricht">Nachricht *</label>
+            <textarea id="nachricht" name="nachricht" required></textarea>
+          </div>
+
+          <div class="field field--check">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">
+              Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen
+              und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage
+              einverstanden. *
+            </label>
+          </div>
+
+          <div>
+            <button class="btn btn--primary" type="submit">E-Mail schreiben …</button>
+          </div>
+
+          <p class="form-status" id="form-status" role="status"></p>
+
+          <p class="form-note">
+            Hinweis: Ohne serverseitigen Versand öffnet dieses Formular dein
+            E-Mail-Programm mit vorbereitetem Text.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== Anfahrt ===================== -->
+  <section class="section section--alt" id="anfahrt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Anfahrt</span>
+        <h2>So findest du das Clubheim</h2>
+        <p class="lead">
+          Du findest uns an der Bremer Straße 121 in Verden (Aller) – im weißen Gebäude,
+          Eingang seitlich unter dem Vereinsbanner.
+        </p>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="map-embed reveal">
+          <div>
+            <p style="margin-bottom:14px">
+              <strong>Karte noch nicht eingebunden.</strong>
+            </p>
+            <p style="margin-bottom:20px">
+              Aus Datenschutzgründen ist hier keine Karte automatisch geladen.
+              Ein OpenStreetMap-Ausschnitt lässt sich datensparsam einbetten –
+              siehe Hinweis in der <code>README.md</code>.
+            </p>
+            <a class="btn btn--ghost btn--extern"
+               href="https://www.openstreetmap.org/search?query=Bremer%20Str.%20121%2C%2027283%20Verden"
+               target="_blank" rel="noopener noreferrer">
+              In OpenStreetMap öffnen<span class="sr-only"> (öffnet in neuem Tab)</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3>Mit dem Auto</h3>
+          <p>
+            Über die A27 (Abfahrt Verden-Nord oder Verden-Ost) und dann auf die Bremer
+            Straße. Parken lässt sich direkt am Gebäude.
+          </p>
+
+          <h3 style="margin-top:28px">Mit Bus &amp; Bahn</h3>
+          <p>
+            Ab Bahnhof Verden (Aller) mit dem Stadtbus Richtung Bremer Straße.
+          </p>
+
+          <h3 style="margin-top:28px">So erkennst du uns</h3>
+          <p>
+            Weißes Gebäude mit blauem Hallentor. Der Vereinseingang liegt links davon,
+            direkt unter dem blauen Banner „Billard Club Black &amp; White Verden“.
+          </p>
+
+          <div class="note redaktion">
+            <strong>Noch anzupassen:</strong> Parkplatzsituation und Bushaltestelle
+            bitte prüfen und genauer beschreiben.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <img class="logo__mark" src="assets/img/logo.svg" alt="" width="38" height="38">
+          <span class="logo__text">
+            Black &amp; White
+            <small>Billard Club Verden</small>
+          </span>
+        </a>
+        <p style="margin-top:18px;max-width:38ch">
+          Poolbillard in Verden an der Aller – vier Turniertische, gemütliche
+          Atmosphäre und offen für alle Altersgruppen.
+        </p>
+      </div>
+
+      <div>
+        <h4>Anschrift</h4>
+        <address>
+          Billard Club Black &amp; White Verden<br>
+          Bremer Str. 121<br>
+          27283 Verden (Aller)<br><br>
+          [Telefonnummer eintragen]<br>
+          [E-Mail-Adresse eintragen]
+        </address>
+      </div>
+
+      <div>
+        <h4>Seiten</h4>
+        <ul>
+          <li><a href="verein.html">Verein</a></li>
+          <li><a href="training.html">Training &amp; Öffnungszeiten</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="kontakt.html">Kontakt &amp; Anfahrt</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span data-jahr>2026</span> Billard Club Black &amp; White Verden</span>
+      <span>
+        <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
+        <a href="datenschutz.html">Datenschutz</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

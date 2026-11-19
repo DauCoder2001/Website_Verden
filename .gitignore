@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# Was NICHT auf die Website gehoert
+#
+# Diese Ordner liegen nur als Arbeitsmaterial neben der Website. Ohne diese
+# Datei wuerden sie beim Hochladen oder bei GitHub Pages mit veroeffentlicht
+# werden - darunter die komplette alte Vereinsseite und Material anderer
+# Vereine, an dem wir keine Rechte haben.
+# ---------------------------------------------------------------------------
+
+Alte Website/
+Andere Websites/
+Bilder/
+Test Hosting auf Github/
+sub.domain zu den Scoreboards und Turneirplänen/
+
+# Arbeitsumgebung
+.claude/
+
+# Dateien, die Windows und macOS von selbst anlegen
+Thumbs.db
+desktop.ini
+.DS_Store
